@@ -19,7 +19,7 @@
    <td> <select name="class">
 <option value="default">-
 <?php
-    include("/var/www/tour/web/classes.php");
+    include("/var/www/html/tour/web/classes.php");
     $que= getClasses();
     $num=mysql_num_rows($que);
     $i=0;

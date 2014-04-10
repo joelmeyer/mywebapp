@@ -10,7 +10,7 @@
     </div>
 </div>
 <?php
-include("/var/www/tour/dbquery.php");
+include("/var/www/html/tour/dbquery.php");
 
 $username=$_GET['user'];
 $un= mysql_real_escape_string($username);

@@ -1,5 +1,5 @@
 <?php
-include("/var/www/tour/dbquery.php");
+include("/var/www/html/tour/dbquery.php");
 function getClasses()
 {
     openConnection();

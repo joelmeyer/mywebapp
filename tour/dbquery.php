@@ -1,11 +1,11 @@
 <?php
 function openConnection()
 {
-    include("/var/www/tour/config.php");
+    include("/var/www/html/tour/config.php");
 	if(!$con) {
 	die('Could not connect: ' . mysql_error());
 	}
-	mysql_select_db("stu_tour", $con);
+	mysql_select_db("raspi", $con);
 	return $con;
 }
 
