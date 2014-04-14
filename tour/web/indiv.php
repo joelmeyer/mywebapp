@@ -11,7 +11,7 @@
 </div>
 <?php
 include("/var/www/html/tour/dbquery.php");
-
+openConnection();
 $username=$_GET['user'];
 $un= mysql_real_escape_string($username);
 $q=checkStudent($un);
