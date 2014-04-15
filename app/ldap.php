@@ -12,10 +12,10 @@ function getLdapData($user, $pass){
     }
 
     //LDAP stuff here
-    $ldapServer = 'openldap.goshen.edu';
+    
     $ldapconnection = ldap_connect($ldapServer);
     if($ldapconnection) {
-        $userdistinguishedname = "uid=".$user.",ou=people,dc=goshen,dc=edu";
+       
         //bind to server
         try {
             $result = ldap_bind($ldapconnection, $userdistinguishedname, $pass);
@@ -29,7 +29,7 @@ function getLdapData($user, $pass){
     }
 
     //search for user
-    $accounts_searchResult = ldap_search($ldapconnection, "ou=people, dc=goshen, dc=edu", "uid=".$user);
+    $accounts_searchResult = ldap_search
 
     //gets first user with that username
     $entry = ldap_first_entry($ldapconnection, $accounts_searchResult);
